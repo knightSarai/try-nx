@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/try-nx",
         "index": "apps/try-nx/src/index.html",
@@ -13,8 +15,14 @@
         "polyfills": "apps/try-nx/src/polyfills.ts",
         "tsConfig": "apps/try-nx/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/try-nx/src/favicon.ico", "apps/try-nx/src/assets"],
-        "styles": ["apps/try-nx/src/styles.scss"],
+        "assets": [
+          "apps/try-nx/src/favicon.ico",
+          "apps/try-nx/src/assets"
+        ],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+          "apps/try-nx/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -74,12 +82,17 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/try-nx/**/*.ts", "apps/try-nx/**/*.html"]
+        "lintFilePatterns": [
+          "apps/try-nx/**/*.ts",
+          "apps/try-nx/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/try-nx"],
+      "outputs": [
+        "coverage/apps/try-nx"
+      ],
       "options": {
         "jestConfig": "apps/try-nx/jest.config.ts",
         "passWithNoTests": true
