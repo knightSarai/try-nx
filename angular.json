@@ -4,6 +4,8 @@
   "projects": {
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
+    "core-data": "libs/core-data",
+    "core-state": "libs/core-state",
     "try-nx": "apps/try-nx",
     "try-nx-e2e": "apps/try-nx-e2e"
   }
