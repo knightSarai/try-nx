@@ -1,9 +1,16 @@
-<div style="text-align: center">
-  <h1>Welcome to try-nx!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-    alt="Nx - Smart, Fast and Extensible Build System"
-  />
-</div>
-<div>Message: {{ hello$ | async | json }}</div>
+<p>
+  <mat-toolbar>
+   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      faviorite
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+   share
+ </button>
+</mat-toolbar>
+</p>
+<try-nx-widgets></try-nx-widgets>
